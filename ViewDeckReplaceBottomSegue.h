@@ -20,18 +20,8 @@
  THE SOFTWARE.
  */
 
-#import <ViewDeck/IIViewDeckController.h>
-#import "ViewDeckReplaceMiddleSegue.h"
+#import <UIKit/UIKit.h>
 
-@implementation ViewDeckReplaceMiddleSegue
-
-- (void)perform {
-    IIViewDeckController *source = [self.sourceViewController viewDeckController];
-    if ([self.sourceViewController isKindOfClass:[IIViewDeckController class]])
-        source = self.sourceViewController;
-    source.centerController = self.destinationViewController;
-    if (!self.keepViewDeckOpen)
-        [source closeOpenView];
-}
+@interface ViewDeckReplaceBottomSegue : UIStoryboardSegue
 
 @end

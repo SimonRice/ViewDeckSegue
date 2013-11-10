@@ -18,6 +18,7 @@
 		F4BEB7A8180BB4D300EFFB3B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4BEB7A7180BB4D300EFFB3B /* Images.xcassets */; };
 		F4BEB7C8180BB58800EFFB3B /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BEB7C5180BB58800EFFB3B /* InitialViewController.m */; };
 		F4BEB7C9180BB58800EFFB3B /* MiddleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BEB7C7180BB58800EFFB3B /* MiddleViewController.m */; };
+		F4EDC691182F65F300A568E6 /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EDC690182F65F300A568E6 /* RightViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		F4BEB7C5180BB58800EFFB3B /* InitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
 		F4BEB7C6180BB58800EFFB3B /* MiddleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiddleViewController.h; sourceTree = "<group>"; };
 		F4BEB7C7180BB58800EFFB3B /* MiddleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiddleViewController.m; sourceTree = "<group>"; };
+		F4EDC68F182F65F300A568E6 /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightViewController.h; sourceTree = "<group>"; };
+		F4EDC690182F65F300A568E6 /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,8 @@
 				F4BEB7A1180BB4D300EFFB3B /* Main.storyboard */,
 				F4BEB7A7180BB4D300EFFB3B /* Images.xcassets */,
 				F4BEB796180BB4D300EFFB3B /* Supporting Files */,
+				F4EDC68F182F65F300A568E6 /* RightViewController.h */,
+				F4EDC690182F65F300A568E6 /* RightViewController.m */,
 			);
 			path = ViewDeckSegueExample;
 			sourceTree = "<group>";
@@ -214,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4EDC691182F65F300A568E6 /* RightViewController.m in Sources */,
 				F4BEB7A0180BB4D300EFFB3B /* AppDelegate.m in Sources */,
 				F4BEB79C180BB4D300EFFB3B /* main.m in Sources */,
 				F4BEB7C8180BB58800EFFB3B /* InitialViewController.m in Sources */,

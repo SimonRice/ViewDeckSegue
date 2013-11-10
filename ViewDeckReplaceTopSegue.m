@@ -21,17 +21,15 @@
  */
 
 #import <ViewDeck/IIViewDeckController.h>
-#import "ViewDeckReplaceMiddleSegue.h"
+#import "ViewDeckReplaceTopSegue.h"
 
-@implementation ViewDeckReplaceMiddleSegue
+@implementation ViewDeckReplaceTopSegue
 
 - (void)perform {
     IIViewDeckController *source = [self.sourceViewController viewDeckController];
     if ([self.sourceViewController isKindOfClass:[IIViewDeckController class]])
         source = self.sourceViewController;
-    source.centerController = self.destinationViewController;
-    if (!self.keepViewDeckOpen)
-        [source closeOpenView];
+    source.topController = self.destinationViewController;
 }
 
 @end

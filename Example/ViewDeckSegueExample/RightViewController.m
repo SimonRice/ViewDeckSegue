@@ -20,18 +20,17 @@
  THE SOFTWARE.
  */
 
-#import <ViewDeck/IIViewDeckController.h>
-#import "ViewDeckReplaceMiddleSegue.h"
+#import <ViewDeckSegue/ViewDeckReplaceMiddleSegue.h>
+#import "RightViewController.h"
 
-@implementation ViewDeckReplaceMiddleSegue
+@implementation RightViewController
 
-- (void)perform {
-    IIViewDeckController *source = [self.sourceViewController viewDeckController];
-    if ([self.sourceViewController isKindOfClass:[IIViewDeckController class]])
-        source = self.sourceViewController;
-    source.centerController = self.destinationViewController;
-    if (!self.keepViewDeckOpen)
-        [source closeOpenView];
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Uncomment this code to keep the ViewDeck open
+    
+    // if ([segue isKindOfClass:[ViewDeckReplaceMiddleSegue class]]) {
+    //     ((ViewDeckReplaceMiddleSegue *)segue).keepViewDeckOpen = YES;
+    // }
 }
 
 @end
